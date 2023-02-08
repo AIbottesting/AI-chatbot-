@@ -13,6 +13,12 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
+# set the rate of speech
+engine.setProperty('rate', 150)
+
+# give the AI program a name 
+name = "Jarvis"
+
 # initialize the microphone
 microphone = sr.Microphone()
 # initialize the AI
